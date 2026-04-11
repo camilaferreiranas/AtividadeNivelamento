@@ -174,6 +174,8 @@ class Main: AcoesContato {
             if let indice = agenda.firstIndex(where: {$0.nome.lowercased() == contato.lowercased()}) {
                 agenda[indice] = novoContato
             }
+        } else {
+            print("Contato não encontrado")
         }
 
         
